@@ -13,17 +13,25 @@
     "url": "https://github.com/Lemoncode/language-sessions/issues"
   },
   "license": "MIT",
-  "author": "Sara",
-  "main": "index.html",
+  "author": "Lemoncode",
+  "contributors": [
+    "Javier Calzado <javi.calzado@lemoncode.net> (https://github.com/fjcalzado)",
+    "Santiago Camargo <santi.camargo@lemoncode.net> (https://github.com/crsanti)",
+    "Antonio Contreras <antonio.contreras@lemoncode.net> (https://github.com/antonio06)"
+  ],
+  "main": "./src/index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lemoncode/language-sessions.git"
   },
   "scripts": {
-    "start": "lite-server -c bs-config.json"
+    "tsc": "tsc",
+    "lite": "lite-server -c bs-config.json",
+    "start": "npm run tsc && npm run lite"
   },
   "dependencies": {
-    "lite-server": "^2.4.0"
+    "lite-server": "^2.4.0",
+    "typescript": "^3.9.3"
   },
   "peerDependencies": {},
   "devDependencies": {}

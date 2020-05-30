@@ -13,12 +13,7 @@
     "url": "https://github.com/Lemoncode/language-sessions/issues"
   },
   "license": "MIT",
-  "author": "Lemoncode",
-  "contributors": [
-    "Javier Calzado <javi.calzado@lemoncode.net> (https://github.com/fjcalzado)",
-    "Santiago Camargo <santi.camargo@lemoncode.net> (https://github.com/crsanti)",
-    "Antonio Contreras <antonio.contreras@lemoncode.net> (https://github.com/antonio06)"
-  ],
+  "author": "Sara",
   "main": "index.html",
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 
-const treeArrayExample = [
+const treeExample = [
   "level1",
   [
     "level2",
@@ -13,10 +13,10 @@ const treeArrayExample = [
   ]
 ];
 
-interface TreeArray extends Array<TypeTreeArray> {}
+interface TreeArray extends Array<Tree> {}
 
-type TypeTreeArray = string | TreeArray;
+type Tree = string | TreeArray;
 
-const functionArrayExample = (arg: TypeTreeArray) => {}
+const functionArrayExample = (arg: Tree) => {}
 
-functionArrayExample(treeArrayExample);
+functionArrayExample(treeExample);

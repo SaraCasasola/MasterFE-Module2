@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "outDir": "./src/built",
+      "allowJs": true,
+      "target": "es6",
+      "lib": [
+        "es2019",
+        "dom"
+      ]
+    },
+    "include": ["./src/**/*"]        
+  }

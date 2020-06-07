@@ -1,0 +1,32 @@
+{
+  "name": "language-sessions-playground",
+  "version": "1.0.0",
+  "keywords": [
+    "lemoncode",
+    "master",
+    "javascript",
+    "typescript"
+  ],
+  "homepage": "https://github.com/Lemoncode/language-sessions#readme",
+  "bugs": {
+    "url": "https://github.com/Lemoncode/language-sessions/issues"
+  },
+  "license": "MIT",
+  "author": "Sara Casasola",
+  "main": "./src/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemoncode/language-sessions.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "lite": "lite-server -c bs-config.json",
+    "start": "npm run tsc && npm run lite"
+  },
+  "dependencies": {
+    "lite-server": "^2.4.0",
+    "typescript": "^3.9.3"
+  },
+  "peerDependencies": {},
+  "devDependencies": {}
+}

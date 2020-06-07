@@ -10,7 +10,7 @@ const flatArray = arrayToFlat => arrayToFlat.flat(Infinity);
 
 /*************************
  * 
- * APARTADO A 
+ * APARTADO B 
  * 
  *************************/
 

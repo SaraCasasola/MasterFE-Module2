@@ -60,17 +60,18 @@ let count = 0; // Comprobacion de nº de ejecuciones
 const repeatText = (repetitions: number, text: string): string =>
   (count++, `${text} `.repeat(repetitions).trim());
 
-const memoize = (func: (repetitions: number, text: string) => string) => {
+const memoize = (func: (...args: Array<string|number|boolean>) => string) => {
   let cache = {};
 
-  return (repetitions: number, text: string): string => {
-    let cacheKey: string = text.concat(repetitions.toString());
+  return (...args: Array<string|number|boolean>): string => {
+    let cacheKey: string = "";
+    args.forEach(arg => cacheKey = cacheKey.concat(arg.toString()));
 
     if (cacheKey in cache) {
       return cache[cacheKey];
     }
         
-    return cache[cacheKey] = func(repetitions, text);  
+    return cache[cacheKey] = func(...args);  
   }
 };
 
